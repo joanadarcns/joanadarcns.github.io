@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Joana D'arc — Portfólio</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#6ee7b7; --text:#e6eef8;
+      --muted:#9fb0c8; --maxw:960px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{background:linear-gradient(180deg,#071025,var(--bg)); color:var(--text); margin:0; padding:40px 16px; display:flex; justify-content:center;}
+    .wrap{max-width:var(--maxw); width:100%;}
+    header{display:flex; gap:20px; align-items:center;}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(90deg,#123,#456);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:var(--card)}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted); margin:6px 0 18px}
+    .grid{display:grid;grid-template-columns:1fr 340px; gap:28px; align-items:start}
+    @media(max-width:880px){.grid{grid-template-columns:1fr;}}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:18px; border-radius:12px; box-shadow: 0 6px 18px rgba(2,6,23,0.6);}
+    .skills{display:flex; flex-wrap:wrap; gap:8px}
+    .chip{background:rgba(255,255,255,0.04); padding:8px 10px; border-radius:999px; font-size:13px; color:var(--muted)}
+    .projects{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+    .proj{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);display:flex;flex-direction:column;gap:8px}
+    .proj h3{margin:0;font-size:16px}
+    .proj p{margin:0;color:var(--muted);font-size:14px}
+    a.button{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#062024;text-decoration:none;font-weight:600}
+    footer{margin-top:24px;color:var(--muted);font-size:13px}
+    .meta{display:flex;flex-direction:column;gap:10px}
+    .contact a{color:var(--accent); text-decoration:none}
+    .resume{font-size:14px}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="avatar">JD</div>
+      <div>
+        <h1>Joana D'arc Nunes da Silva</h1>
+        <p class="lead">Estatística • Análise de Dados • BI — João Pessoa, PB</p>
+        <div style="display:flex;gap:10px;align-items:center">
+          <a class="button" href="https://github.com/joanadarcns" target="_blank" rel="noopener">GitHub</a>
+          <a class="button" href="https://www.linkedin.com/in/joana-d-arc-nunes-689272215" target="_blank" rel="noopener">LinkedIn</a>
+          <!-- Link para o currículo (arquivo enviado). O sistema transformará esse caminho em URL apropriada -->
+          <a class="button" href="sandbox:/mnt/data/Joana D'arc currículo novo 2025.11.docx (1).pdf" target="_blank" rel="noopener">Baixar CV (PDF)</a>
+        </div>
+      </div>
+    </header>
+
+    <section style="margin-top:20px" class="grid">
+      <!-- Coluna principal -->
+      <div>
+        <div class="card">
+          <h2>Sobre mim</h2>
+          <p style="color:var(--muted);margin-top:8px">
+            Bacharela em Estatística pela UFPB (Láurea Acadêmica). Experiência em órgãos públicos (TRT-13, Procon-PB) com relatórios gerenciais, criação de dashboards em R/Shiny, análise estatística e automação de processos. Também atuei em logística com controle de estoques e otimização de compras.
+          </p>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h2>Projetos em destaque</h2>
+
+          <div class="projects">
+            <article class="proj">
+              <h3>Previsão de preços de imóveis — Machine Learning (R)</h3>
+              <p>Modelo de regressão para prever preços de imóveis em Cabedelo-PB. Limpeza, EDA, modelagem e avaliação.</p>
+              <div style="display:flex;gap:8px">
+                <a href="https://joanadarcns.github.io/AM_Prova3/" target="_blank" rel="noopener" class="chip">Página do projeto</a>
+                <a href="https://github.com/joanadarcns/pacote_regressao_logistica" target="_blank" rel="noopener" class="chip">Código (GitHub)</a>
+              </div>
+            </article>
+
+            <article class="proj">
+              <h3>Pacote de regressão logística (Python)</h3>
+              <p>Pacote próprio para regressão logística, com funções documentadas e exemplos.</p>
+              <div style="display:flex;gap:8px">
+                <a href="https://github.com/joanadarcns/pacote_regressao_logistica" target="_blank" rel="noopener" class="chip">GitHub</a>
+              </div>
+            </article>
+
+            <article class="proj">
+              <h3>TCC — Tendência da incidência de câncer de mama (Joinpoint)</h3>
+              <p>Análise de séries temporais e taxas padronizadas com interpretação dos resultados e gráficos.</p>
+              <div style="display:flex;gap:8px">
+                <a href="https://joanadarcns.github.io/AM_Prova3/" target="_blank" rel="noopener" class="chip">Portfólio/TCC</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h2>Como eu trabalho</h2>
+          <ul style="color:var(--muted); margin:8px 0 0 18px;padding:0">
+            <li>Transformo dados em indicadores e histórias acionáveis.</li>
+            <li>Prefiro soluções reprodutíveis: scripts em R/Python, versionamento no Git.</li>
+            <li>Dashboards leves para tomada de decisão (Shiny / Power BI).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Coluna lateral -->
+      <aside>
+        <div class="card meta">
+          <div>
+            <h3>Competências técnicas</h3>
+            <div class="skills" style="margin-top:8px">
+              <span class="chip">R (ggplot2, dplyr, shiny)</span>
+              <span class="chip">Excel Avançado</span>
+              <span class="chip">SQL (básico)</span>
+              <span class="chip">Power BI (iniciante)</span>
+              <span class="chip">Python (pandas, sklearn)</span>
+              <span class="chip">Joinpoint / SPSS</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 style="margin-top:14px">Experiência</h3>
+            <p style="margin:6px 0;color:var(--muted)">TRT-13 — Estagiária de Estatística (08/2023–12/2024)</p>
+            <p style="margin:6px 0;color:var(--muted)">Procon-PB — Estagiária de Estatística (02/2022–08/2023)</p>
+            <p style="margin:6px 0;color:var(--muted)">Grupo All Pé — Estoquista e Compradora (02/2025–10/2025)</p>
+          </div>
+
+          <div class="contact" style="margin-top:12px">
+            <h3>Contato</h3>
+            <p class="resume">✉ <a href="mailto:joanadcnunes@gmail.com">joanadcnunes@gmail.com</a></p>
+            <p>📍 João Pessoa – PB</p>
+            <p>🔗 <a href="https://www.linkedin.com/in/joana-d-arc-nunes-689272215" target="_blank" rel="noopener">LinkedIn</a></p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Download rápido</h3>
+          <p style="color:var(--muted);margin-bottom:10px">Baixe meu currículo e veja projetos com mais detalhes.</p>
+          <a class="button" href="sandbox:/mnt/data/Joana D'arc currículo novo 2025.11.docx (1).pdf" target="_blank" rel="noopener">CV — PDF</a>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <p style="color:var(--muted)">Feito por Joana D'arc • GitHub Pages • Atualize este site adicionando novos projetos no seu repositório.</p>
+    </footer>
+  </main>
+</body>
+</html>
